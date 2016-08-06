@@ -1,3 +1,18 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <h2>Todo</h2>
+  <div class="task">
+    <div *ngFor="let task of board.todo">{{task.title}}</div>
+  </div>
+</div>
+<div class="container">
+  <h2>Doing</h2>
+  <div class="task">
+    <div *ngFor="let task of board.doing">{{task.title}}</div>
+  </div>
+</div>
+<div class="container">
+  <h2>Done</h2>
+  <div class="task">
+    <div *ngFor="let task of board.done">{{task.title}}</div>
+  </div>
+</div>
